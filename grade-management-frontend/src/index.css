@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*  base styles  */
+:root {
+    --bg-color: #257eb9;
+    --text-color: #ffffff;
+    --text-color-2: #000000;
+    --border-color: #fafafa;
+    --shadow-color: rgba(0,0,0,0.1);
+    --active-item-color: #cccccc;
+}
+* {
+    margin: 0;
+    font-family: "Quicksand";
+    color: var(--text-color-2);
+}
+
+/*  App.js  */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/*  Create.js  */
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label {
+    text-align: left;
+    display: block;
+}
+
+.create h2 {
+    font-size: 20px;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    display: block;
+}
+
+.create button {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*  Home.js  */
+
+/*  NotFound.js  */
+
+/*  GradeList.js  */
+.grade-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid var(--shadow-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grade-preview:hover {
+    box-shadow: 1px 3px 5px var(--shadow-color);
+    background-color: var(--active-item-color);
+    cursor: pointer;
+}
+
+.filter-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    color: var(--text-color); 
+    text-decoration: none;
+    border: 1px solid var(--bg-color);
+}
+
+.filter-area input{
+    min-width: 50%;
+    max-width: 60%;
+    margin-right: 25px;
+}
+
+.sort-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--bg-color);
+    color: var(--text-color); 
+    text-decoration: none;
+    border: 1px solid var(--bg-color);
+}
+
+.sort-btn span{
+    padding: 5px 15px;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color); 
+    text-decoration: none;
+}
+
+.sort-btn span:hover{
+    cursor: pointer;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+/*  Loading.js  */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+  
+.loading-sprinner-text{
+    color: var(--text-color-2);
+    font-size: large;
+    margin-left: 5px;
+}
+
+/*  Navbar.js  */
+.navbar {
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border-color);
+    margin-left: auto;
+}
+
+.navbar h1 {
+    margin-left: auto;
+    margin-right: 32px;
+    color: var(--bg-color);
+    cursor: default;
+}
+
+.navbar-link{
+    padding: 6px;
+    margin-left: 16px;
+    color: var(--text-color-2);
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: var(--bg-color);
+}
+
+.navbar-btn{
+    padding: 6px;
+    margin-left: 8px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    color: var(--text-color); 
+    text-decoration: none;
+    border: 1px solid var(--bg-color);
+}
+
+.navbar-btn:hover{
+    background-color: var(--border-color);
+    color: var(--bg-color);
+}
